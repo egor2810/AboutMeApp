@@ -13,6 +13,7 @@
 		F70CDE892B0FE63C00A7E4E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F70CDE872B0FE63C00A7E4E9 /* Main.storyboard */; };
 		F70CDE8B2B0FE63E00A7E4E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F70CDE8A2B0FE63E00A7E4E9 /* Assets.xcassets */; };
 		F70CDE8E2B0FE63E00A7E4E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F70CDE8C2B0FE63E00A7E4E9 /* LaunchScreen.storyboard */; };
+		F73A6CEF2B108C75004E15DB /* GreetingScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73A6CEE2B108C75004E15DB /* GreetingScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		F70CDE8A2B0FE63E00A7E4E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F70CDE8D2B0FE63E00A7E4E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F70CDE8F2B0FE63E00A7E4E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F73A6CEE2B108C75004E15DB /* GreetingScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				F70CDE812B0FE63C00A7E4E9 /* AppDelegate.swift */,
 				F70CDE832B0FE63C00A7E4E9 /* SceneDelegate.swift */,
 				F70CDE852B0FE63C00A7E4E9 /* LoginViewController.swift */,
+				F73A6CEE2B108C75004E15DB /* GreetingScreenViewController.swift */,
 				F70CDE872B0FE63C00A7E4E9 /* Main.storyboard */,
 				F70CDE8A2B0FE63E00A7E4E9 /* Assets.xcassets */,
 				F70CDE8C2B0FE63E00A7E4E9 /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F70CDE862B0FE63C00A7E4E9 /* LoginViewController.swift in Sources */,
+				F73A6CEF2B108C75004E15DB /* GreetingScreenViewController.swift in Sources */,
 				F70CDE822B0FE63C00A7E4E9 /* AppDelegate.swift in Sources */,
 				F70CDE842B0FE63C00A7E4E9 /* SceneDelegate.swift in Sources */,
 			);
