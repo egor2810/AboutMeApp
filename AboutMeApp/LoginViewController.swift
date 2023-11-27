@@ -7,12 +7,15 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+final class LoginViewController: UIViewController {
     
     @IBOutlet weak var logInButton: UIButton!
     
     @IBOutlet weak var userNameTF: UITextField!
     @IBOutlet weak var passwordTF: UITextField!
+    
+    @IBOutlet weak var stackView: UIStackView!
+    
     
     let user = "1"
     let password = "1"
