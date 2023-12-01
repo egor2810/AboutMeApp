@@ -74,6 +74,11 @@ final class LoginViewController: UIViewController {
     
     // MARK: - IBActions
     @IBAction func unwind(for segue: UIStoryboardSegue) {
+        userNameTF.text = ""
+        passwordTF.text = ""
+    }
+    
+    @IBAction func autofillButtonTapped() {
         fillAuthorizationFields()
     }
     
