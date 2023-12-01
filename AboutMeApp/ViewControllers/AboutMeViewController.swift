@@ -20,7 +20,7 @@ final class AboutMeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addVerticalGradient(topColor: primaryColor, bottomColor: secondaryColor)
-        getImage(forURL: user?.userInfo.personPhotoURL)
+        fetchImage()
         setPersonInfoStack(for: personInfoStack)
     }
     
@@ -34,12 +34,6 @@ final class AboutMeViewController: UIViewController {
         personInfoVC?.person = user?.userInfo
         
         self.tabBarController?.tabBar.layer.zPosition = -1
-    }
-    
-    private func getImage(forURL url: URL?) {
-        if let data = try? Data(contentsOf: url!) {
-            personPhoto.image = UIImage(data: data)
-        }
     }
     
     
@@ -68,4 +62,21 @@ final class AboutMeViewController: UIViewController {
         }
     }
     
+}
+
+// MARK: - networking
+extension AboutMeViewController {
+    func fetchImage() {
+        guard let url = user?.userInfo.personPhotoURL else { return }
+
+        URLSession.shared.dataTask(with: url) { data, _, error in
+            guard let data, error == nil else { return }
+            
+            let image = UIImage(data: data)
+            
+            DispatchQueue.main.async { [weak self] in
+                self?.personPhoto.image = image
+            }
+        }.resume()
+    }
 }
